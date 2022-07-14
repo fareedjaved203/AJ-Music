@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body {
+    background-color: #A4A4A4;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+nav a {
+    color: white;
+}
+
+.navItems {
+
+    position: absolute;
+    top: 20px;
+    right: 230px;
+    padding-bottom: 3px;
+}
+
+/* to limit border length on the active tab */
+.navItems::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 65%;
+    border-bottom: 2px solid white;
+}
+
+.navItems2 {
+    position: absolute;
+    top: 20px;
+    right: 170px;
+}
+
+.brand img {
+    width: 230px;
+    padding-top: 10px;
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    min-height: 55vh;
+    width: 100vw;
+    color: white;
+    background-color: black;
+    display: flex;
+    margin: 23px auto;
+    padding: 30px;
+    background-image: url('music-background2.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.bottom {
+    position: sticky;
+    height: 120px;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.icons {
+    margin-top: 12px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin-top: 30px;
+}
+
+.songItem {
+    height: 40px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 10px 24px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.songItem img {
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 40px;
+    border-radius: 80px;
+}
+
+.timestamp {
+    margin-left: 60px;
+    padding-right: 5px;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 9vw;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.songList h1 {
+    font-family: 'Inter', sans-serif;
+    margin-left: 180px;
+    font-weight: bolder;
+}
