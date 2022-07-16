@@ -153,3 +153,16 @@ nav a {
     margin-left: 180px;
     font-weight: bolder;
 }
+
+@media only screen and (max-width: 768px) {
+    .songItem{
+        width: 95%;
+    }
+    .icons{
+        margin-top: 40px;
+    }
+    .songInfo{
+        position: absolute;
+        top: 25px;
+    }
+  }
